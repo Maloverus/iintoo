@@ -42,8 +42,8 @@ img {
     color: white;
     height: 35px;
     border: none;
-    width: 200px;
-    margin-right: 40px;
+    width: 230px;
+    margin-right: 80px;
 }
 
 .li-btn {
@@ -51,14 +51,38 @@ img {
     color: white;
     height: 35px;
     border: none;
-    width: 200px;
+    width: 230px;
 }
 
-h4 {
-    margin-top: 20px;
+.line {  
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
 }
 
-.input {
+.line:before,
+.line:after {
+ content: '';
+ display: inline-block;
+ width: 20%;
+ height: 1px;
+ background: #000;
+ z-index: -1;
+ position: relative;
+ vertical-align: middle;
+}
+
+.line:before {
+    right: 5px;
+    margin: 0 0 0 -100%;
+   }
+   .line:after {
+    left: 5px;
+    margin: 0 -100% 0 0;
+}
+
+.float-container {
     display: inline;
 }
 
@@ -74,7 +98,7 @@ h4 {
     border-style: solid;
     border-radius: 0px 4px 0px 0px;
     height: 40px;
-    width: 195px;
+    width: 220px;
 }
 
 .tel-input {
@@ -83,7 +107,7 @@ h4 {
     border-style: solid;
     border-radius: 0px 0px 4px 4px;
     height: 40px;
-    width: 195px;
+    width: 220px;
 }
 
 .txt {
